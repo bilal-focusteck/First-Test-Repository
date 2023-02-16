@@ -9,8 +9,8 @@ var c= a+b
 console.log(c)
 
 var x=10;
-var x="Updated value" //if we use let here, it will throw error, let never allow you to 
-//update value
+var x="Updated value" //if we use let here, it will throw error, 
+//let never allow you to update value
 console.log(x);
 
 let message;
@@ -18,7 +18,8 @@ message = 'Hello!';
 console.log(message);
 
 //Hoisting with var variables:
-//we can't do hoising with let, it can't allow you to use variable before initialize it
+//we can't do hoising with let, it can't allow you to use variable 
+//before initialize it
 var g=2;
 var f = 3
 z = f + g
@@ -46,8 +47,8 @@ console.log(adding);
 const pi=10;
 // pi=15 not allowed
 console.log(pi);
-//when using const with array then we can't re-define array but we can
-//change or make modification in array.
+//when using const with array then we can't re-define array but we 
+//can change or make modification in array.
 const array = ["Bilal", "Ahmad" , "Software Engineer", 24];
 array[0] = "Billey"
 array.pop();
@@ -95,3 +96,40 @@ function mod(q , t){
 }
  console.log(mod(q,t))
 
+//string length
+var len = "Bilal"
+console.log(len.length);
+
+console.log("Hello how are you?".length);
+
+//to lower case
+console.log("BILAL".toLowerCase());
+//to upper case
+console.log("bilal".toUpperCase());
+
+//index position, also using .at
+console.log("Index Positions")
+const language = "JavaScript";
+console.log(language[0]); 
+console.log(language[1]); 
+console.log(language[language.length-1]); 
+console.log(language[language.length-2]); 
+console.log(language.at(0));
+console.log(language.at(1));
+console.log(language.at(-1));
+console.log(language.at(-2));
+
+//substring
+console.log("Substring")
+const mylanguage = "JavaScript";
+console.log(mylanguage.substring(1, 4)); 
+console.log(mylanguage.substring(2));
+
+//string interpolation
+console.log("String interpolation")
+let milanguage = "JavaScript";
+console.log(`I am learning ${milanguage}`);
+
+//numeric separator for greater no of integers
+var bh = 10_11;
+console.log(bh);
