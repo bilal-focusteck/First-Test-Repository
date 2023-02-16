@@ -76,3 +76,13 @@ function add(){
     return additionary
 }
 console.log(add());
+
+//var can be used globally anywhere. 
+function mul(){
+    let a =5;
+    let b =4;
+    var multiply = a*b ;
+    return multiply;
+}
+console.log(mul());
+
