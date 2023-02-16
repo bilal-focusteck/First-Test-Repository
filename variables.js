@@ -86,3 +86,12 @@ function mul(){
 }
 console.log(mul());
 
+
+var q = 10;
+var t = 5;
+function mod(q , t){
+    var mymod = q % t;
+    return mymod;
+}
+ console.log(mod(q,t))
+
