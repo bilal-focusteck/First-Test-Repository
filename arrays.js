@@ -125,3 +125,24 @@ function sumOddNumbers(numbers) {
 console.log(sumOddNumbers([15, 5, 10]));
 console.log(sumOddNumbers([2, 3, 4, 5, 6])); 
 console.log(sumOddNumbers([-2, -3, 4, 5, 6])); 
+
+//array filter method (it behaves as a condition to get something
+//from array specifically.)
+//here function(number) to }); is callback function
+//javascript will call it as many times as elements we have
+const numbers = [9, 5, 14, 3, 11];
+const numbersAboveTen = numbers.filter(function(number) {
+    return number > 10;
+});
+console.log(numbersAboveTen);
+
+//another example
+const years = [2000, 2008, 2020, 2023];
+years.filter(function(year) {
+    return year >= 2010;
+});
+
+
+
+
+
