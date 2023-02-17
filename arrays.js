@@ -142,7 +142,81 @@ years.filter(function(year) {
     return year >= 2010;
 });
 
+//positive temperature
+
+function getPositiveTemperatures(temperatures) {
+    return temperatures.filter(function(temperature) {
+        return temperature > 0;
+    });
+}
+console.log(getPositiveTemperatures([-5, 12, 3]));
+console.log(getPositiveTemperatures([1, -3, -2, 4, 10]));
+
+//find instead of filter, find will only get first result
+let names = ["Sam", "Alex", "Charlie"];
+
+let result = names.find(function(name) {
+  return name === "Alex";
+});
+console.log(result);
+
+//find year in list
+function getYear(years, searchYear) {
+    return years.find(function (year){
+        return year===searchYear;
+    });
+}
+console.log(getYear([2019, 2020, 2021], 2020)); // 2020
+console.log(getYear([2019, 2020, 2021], 1990)); // undefined
+
+//odd years in the list
+function getOddYears(years) {
+    return years.filter(function (year){
+        if (year % 2 !=0){
+            return year;
+        }
+    })
+}
+
+// Sample usage - do not modify
+console.log(getOddYears([2019, 2020, 2021])); // [2019, 2021]
+console.log(getOddYears([2000, 2015, 2018, 2020])); // [2015]
+
+//array.map is used to transform array
+const numbersss = [4, 2, 5, 8];
+
+const doubled = numbersss.map(function(number) {
+    return number * 2;
+});
+console.log(doubled);
+
+//array.include method
+const grocery = ["Apple", "Peach", "Tomato"];
+
+console.log(grocery.includes("Tomato")); // true
+console.log(grocery.includes("Bread"));
 
 
+//array.join used for separation characters.
+const groceries = ["Apple", "Peach", "Tomato"];
+console.log(groceries.join("; ")); // "Apple; Peach; Tomato"
+console.log(groceries.join(" . "));
 
+//include method function
+function isAppUsed(apps, app) {
+    return apps.includes(app);
+}
 
+// Sample usage - do not modify
+console.log(isAppUsed(["Twitter", "Calculator"], "Calculator")); // true
+console.log(isAppUsed(["Clock", "Calculator"], "Safari")); // false
+
+//string length calculation using array.map
+function getStringSizes(strings) {
+    return strings.map(function (string){
+        return string.length;
+    });
+}
+console.log(getStringSizes(["a", "abc"])); // [1, 3]
+console.log(getStringSizes(["Sam", "Alex", "Charlie"])); // [3, 4, 7]
+console.log(getStringSizes(["Hello", "Blue"])); // [5, 4]
