@@ -148,4 +148,16 @@ function canVote(aged) {
     }
 }
 
+//if its empty string then return 0
+agge="15";
+function getNextAge(agge) {
+    if (agge === "")
+    {
+        return 0;
+    }
+    else{
+        return Number.parseInt(agge,10)+1
+    }
+}
+
 

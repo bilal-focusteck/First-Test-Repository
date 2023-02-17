@@ -133,3 +133,10 @@ console.log(`I am learning ${milanguage}`);
 //numeric separator for greater no of integers
 var bh = 10_11;
 console.log(bh);
+
+//variable passing to a function
+var mygrades = 10;
+function gradecalculation (mygrades){
+    return mygrades*2;
+}
+console.log(gradecalculation(mygrades));
