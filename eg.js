@@ -44,7 +44,24 @@ console.log(access);
 //value and '??' returns first exisitng value
 let firstName = null;
 let lastName = null;
-let nickName = "Supercoder";
-
+let nickName = "found first exising element";
 // shows the first defined value:
 console.log(firstName ?? lastName ?? nickName ?? "hfdhf");
+
+//"||" operator fid first true value
+let fname = null;
+let lname = "hello";
+let nname = "Supercoder";
+
+// shows the first truthy value:
+console.log((fname || lname || nname || "hello"));
+
+let height = 0;
+console.log((height || 100)); // 100
+console.log((height ?? 100)); // 0
+
+// program to check pass or fail using TERNARY OPERATOR
+//let marks = prompt('Enter your marks :');
+let marks = 39;
+let result = (marks >= 40) ? 'pass' : 'fail';
+console.log(`You ${result} the exam.`);

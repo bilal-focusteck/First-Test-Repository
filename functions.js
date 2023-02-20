@@ -160,4 +160,38 @@ function getNextAge(agge) {
     }
 }
 
+console.log("New function begin here");
+let userName = 'John';
+function showMessage() {
+  let userName = "Bob"; // declare a local variable
+  let message = 'Hello, ' + userName; // Bob
+  console.log((message));
+}
+// the function will create and use its own userName
+showMessage();
+console.log( userName ); 
 
+function showMessage(text) {
+    if (text === undefined) { // if the parameter is missing
+      text = 'empty message';
+    }
+    else{
+        console.log(`Message is: ${text}`);
+    }
+    //console.log(text);
+  }
+  
+  showMessage("Bilal");
+
+//arrow functions:
+let addd = (a,b)=>a+b;
+console.log(sum(2,6));
+//for one argument, we can omitt the paranthesis bracket
+let double = n => n * 2;
+console.log( double(5) );
+//multiline arrow functions
+let decr = v =>{
+    v--;
+    return v;
+}
+console.log(decr(5));
