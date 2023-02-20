@@ -194,4 +194,4 @@ let decr = v =>{
     v--;
     return v;
 }
-console.log(decr(5));
+console.log(decr(4));
