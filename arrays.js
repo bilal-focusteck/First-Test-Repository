@@ -220,3 +220,19 @@ function getStringSizes(strings) {
 console.log(getStringSizes(["a", "abc"])); // [1, 3]
 console.log(getStringSizes(["Sam", "Alex", "Charlie"])); // [3, 4, 7]
 console.log(getStringSizes(["Hello", "Blue"])); // [5, 4]
+
+//Copying data by refrence
+let fruitsss = ["Banana"];
+let arrayyy = fruitsss;
+arrayyy.push("Apple");
+console.log(arrayyy);
+console.log(fruitsss);
+
+//multi dimensional array
+let matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+  
+console.log( matrix[1][1] );

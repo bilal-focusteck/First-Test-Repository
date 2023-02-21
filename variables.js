@@ -140,3 +140,14 @@ function gradecalculation (mygrades){
     return mygrades*2;
 }
 console.log(gradecalculation(mygrades));
+
+let d = 1.23456;
+
+console.log( d.toFixed(3) ); 
+
+//index of substring in string
+let myvalue = "Hello i am Bilal";
+console.log(myvalue.indexOf("i"));
+//now i is at 6th position, we can also give second parameter 
+//to start getting value after given parameter
+console.log(myvalue.indexOf("i",7));
