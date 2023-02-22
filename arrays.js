@@ -236,3 +236,8 @@ let matrix = [
 ];
   
 console.log( matrix[1][1] );
+
+let myarray_2 = new Array("Bilal", 25, "SE", "Focusteck");
+console.log(myarray_2);
+myarray_2[3]= "Team Web";
+console.log(myarray_2);

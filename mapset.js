@@ -42,3 +42,17 @@ for (let variablees of map3.entries()){
     console.log(variablees);
 }
 
+//in form of array we can declare within constructor not in map.set
+let priceMap = new Map([
+    ['banana', 250],
+    ['apple', 150],
+    ['peach', 200]
+]);
+priceMap.forEach((value, key) => {
+    console.log(`${key}: ${value}`);
+});
+console.log(priceMap.get('banana'));
+priceMap.set('mango', 350);
+console.log(priceMap);
+priceMap.delete('mango');
+console.log(priceMap);
