@@ -93,3 +93,36 @@ function check (obj1, obj2){
   return true;    
 }
 console.log(check(obj1, obj2));
+
+//check if main object dies then what happened to inner objects or keys values
+let shopping = {
+  pname: "Product 1",
+  price: 3000,
+  availability: false,
+  description: {
+      height: 13,
+      width: 15
+  },
+  sizes: [20, 30, "medium", "large"]
+}
+let ref1=shopping.description;
+shopping=null;
+console.log(ref1)
+let ref2 = ref1;
+console.log(ref2)
+
+//list 
+let list = { value: 1 };
+list.next = { value: 2 };
+list.next.next = { value: 3 };
+list.next.next.next = { value: 4 };
+list.next.next.next.next = null;
+console.log(list);
+
+//spread function example
+let arr = [87, 5, 1];
+console.log( Math.max(...arr) ); 
+
+let arr1 = [1, -2, 3, 4];
+let arr2 = [8, 30, -8, 1];
+console.log( Math.max(10,...arr1,35, ...arr2,33) );
