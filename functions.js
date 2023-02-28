@@ -196,3 +196,13 @@ let decr = v =>{
 }
 console.log(decr(4));
 
+let userf = {
+    name: "John",
+    surname: "Smith",
+  
+    get fullName() {
+      return `${this.name} ${this.surname}`;
+    }
+  };
+  
+  console.log(userf.fullName); 
