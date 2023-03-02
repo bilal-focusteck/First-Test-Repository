@@ -30,21 +30,21 @@
 
 // //assigning value
 
-let user = {
-    name: "Bilal",
-    fname: "Tauheed",
-    age: 25
-};
-let admin = user;
-admin.name = "Bilal Ahmad";
-console.log(admin);
-//copying data
-let objA = {};
-let objB = {};
-let objC = {};
-objC = Object.assign(objA,objB);
-console.log(objA===objB);
-console.log(objA===objC);
+// let user = {
+//     name: "Bilal",
+//     fname: "Tauheed",
+//     age: 25
+// };
+// let admin = user;
+// admin.name = "Bilal Ahmad";
+// console.log(admin);
+// //copying data
+// let objA = {};
+// let objB = {};
+// let objC = {};
+// objC = Object.assign(objA,objB);
+// console.log(objA===objB);
+// console.log(objA===objC);
 
 // //cloning examples
 // let obj = {
@@ -113,19 +113,19 @@ console.log(objA===objC);
 
 
 //Objects example programs
-// const course = {
-//     title: "JavaScript",
-//     lectures: 10,
-//     sections: 5,
-//     notes: {
-//         notice: "Welcome to JavaScript",
-//         timings: "Will be announced soon"
-//     },
-//     enroll(){
-//         console.log("Youre Enrolled in JS");
-//     }
-// };
-// console.log(course.lectures);
+const course = {
+    title: "JavaScript",
+    lectures: 10,
+    sections: 5,
+    notes: {
+        notice: "Welcome to JavaScript",
+        timings: "Will be announced soon"
+    },
+    enroll(){
+        console.log("Youre Enrolled in JS");
+    }
+};
+console.log(course.lectures);
 // console.log(course.notes.timings)
 // console.log(course.enroll)
 // console.log(course);

@@ -48,39 +48,39 @@
 // rabbit.walk();
 
 
-// let user ={
+// let user = {
 //     name: "Bilal",
 //     sname: "Ahmad",
 //     set fullName(myname) {
 //         [this.name, this.sname] = myname.split(" ");
-        
+
 //     },
-//     get fullName(){
+//     get fullName() {
 //         return `${this.name} ${this.sname}`;
 //     }
 // };
 // let admin = {
 //     __proto__: user,
 // };
-//   console.log(admin.fullName);
-//   admin.fullName = "Ahmad Bilal";
-//   console.log(admin.fullName); 
-//   console.log(user.fullName); 
+// console.log(admin.fullName);
+// admin.fullName = "Ahmad Bilal";
+// console.log(admin.fullName);
+// console.log(user.fullName);
 
 
 //using for in to iterate keys
 // let animal = {
 //     eats: true
 // };
-  
+
 //   let rabbit = {
 //     jumps: true,
 //     __proto__: animal
 // };
-  
+
 //   // Object.keys only returns own keys
 // console.log(Object.keys(rabbit)); 
-  
+
 //   // for..in loops over both own and inherited keys
 // for(let prop in rabbit) {
 //     console.log(prop); 
@@ -95,10 +95,10 @@
 //     jumps: true,
 //     __proto__: animal
 // };
-  
+
 //   for(let prop in rabbit) {
 //     let isOwn = rabbit.hasOwnProperty(prop);
-  
+
 //     if (isOwn) {
 //       console.log(`Own: ${prop}`); 
 //     } else {
@@ -106,11 +106,11 @@
 //     }
 //   };
 
-function rabbit (name){
-    this.name = name;
-    console.log(name);
-};
-let obj = new rabbit("White Rabbit");
-let obj2 = new rabbit("Black Rabbit");
+// function rabbit(name) {
+//     this.name = name;
+//     console.log(name);
+// };
+// let obj = new rabbit("White Rabbit");
+// let obj2 = new rabbit("Black Rabbit");
 
-obj.name
+// obj.name

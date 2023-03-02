@@ -58,17 +58,17 @@
 // console.log(priceMap);
 
 
-const letters = new Set(["a","b","c"]);
-let text = "";
-let text2= "";
-//using for each
-letters.forEach (function(value) {
-  text += value;
-})
-console.log(text);
-console.log("Using for of loop");
-//using for loop
-for(let x of letters.values()){
-    text2+=x;
-}
-console.log(text2);
+// const letters = new Set(["a","b","c"]);
+// let text = "";
+// let text2= "";
+// //using for each
+// letters.forEach (function(value) {
+//   text += value;
+// })
+// console.log(text);
+// console.log("Using for of loop");
+// //using for loop
+// for(let x of letters.values()){
+//     text2+=x;
+// }
+// console.log(text2);

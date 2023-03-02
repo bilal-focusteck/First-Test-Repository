@@ -10,12 +10,13 @@
 
 // //function within function
 
-// function addition()
+//function addition()
 // {
 //     var a = 5;
 //     var b = 5;
 //     function calculate(a,b)
 //     {
+//         console.log(this);
 //         let sum = a+b;
 //         return sum;
 //     }
@@ -228,14 +229,14 @@
 // console.log(obj.age);
 
 //constructor func in prototype
-function Person(f, l, a) {
-    this.fname = f;
-    this.lname = l;
-    this.age = a;
-}
-Person.prototype.fullname = function () {
-    console.log(this.fname + " " + this.lname);
-}
-let obj = new Person("Bilal", "Ahmad", 25);
-obj.fullname();
-console.log(obj.age);
+// function Person(f, l, a) {
+//     this.fname = f;
+//     this.lname = l;
+//     this.age = a;
+// }
+// Person.prototype.fullname = function () {
+//     console.log(this.fname + " " + this.lname);
+// }
+// let obj = new Person("Bilal", "Ahmad", 25);
+// obj.fullname();
+// console.log(obj.age);

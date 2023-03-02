@@ -14,19 +14,23 @@
 
 
 
-let user = {
-    fullname: function (){
-      return this.func();
-    }
-  }
+// let user = {
+//     fullname: function (){
+//       return this.func();
+//     }
+//   }
 
-let value = {
-    func(){
-        return 5;
-    }
+// let value = {
+//     func(){
+//         return 5;
+//     }
+// }
+
+
+
+//   let generaluser = user.fullname.bind(value);
+//   console.log(generaluser());
+let i;
+for (i =0 ; i<5; i++){
+  console.log(i);
 }
-
-
-
-  let generaluser = user.fullname.bind(value);
-  console.log(generaluser());
